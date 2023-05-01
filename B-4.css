@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville:ital@0;1&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fredericka+the+Great&family=Manrope:wght@200;300;400;500;600;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Padyakke+Expanded+One&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Spray+Paint&family=Rufina:wght@400;700&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+/*CSS rules to specify families
+
+font-family: 'Aboreto', cursive;
+font-family: 'Anonymous Pro', monospace;
+font-family: 'Baskervville', serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'DM Mono', monospace;
+font-family: 'Economica', sans-serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Padyakke Expanded One', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik Spray Paint', cursive;
+font-family: 'Rufina', serif;
+font-family: 'Turret Road', cursive;
+*/
+
+body{
+	padding: 2vw;
+	text-align: justify;
+	background-color: #f1edea;
+}
+
+h1{
+	font-family: 'Aboreto', cursive;
+	font-size: 2em;
+	color: white;
+	padding: 1vw;
+	text-align: center;
+}
+
+h1 span{
+	background-color: #000000;
+	padding: 1.5vh;
+}
+
+h2{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1em;
+	font-weight: 200;
+	padding: 1vw;
+}
+
+h3{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1em;
+	font-weight: 400;
+	padding: 1vh 2vw 1vh 2vw;
+}
+
+p{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 1.5vh 2vw 1.5vh 2vw;
+}
+
+.text{
+	width: 50%;
+	position: fixed;
+	height: 60vh;
+	overflow: scroll;
+	margin-top: 0;
+}
+
+.p1{
+	background-color: #faff6c;
+}
+
+.p2{
+	background-color: #a4ffc1;
+}
+
+.p3{
+	background-color: #8fffff;
+}
+
+.p4{
+	background-color: #ffb2ff;
+}
+
+h6{
+	font-family: 'Roboto Slab', serif;
+	font-size: 0.9em;
+	font-weight: 400;
+	line-height: 1.4;
+	background-color: white;
+	padding: 2vw;
+	width: 40%;
+    margin-left: 55%;
+    margin-top: 2vh;
+}

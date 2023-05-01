@@ -1,0 +1,23 @@
+*{
+	border: 1px solid blue;
+}
+
+body{
+	margin: 0;
+}
+
+.page {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.column{
+	flex: 1;
+	margin: 1em;
+}
+
+img {
+	width: 100%;
+}
+
+.caption

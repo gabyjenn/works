@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville:ital@0;1&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fredericka+the+Great&family=Manrope:wght@200;300;400;500;600;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Padyakke+Expanded+One&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Spray+Paint&family=Rufina:wght@400;700&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+/*CSS rules to specify families
+
+font-family: 'Aboreto', cursive;
+font-family: 'Anonymous Pro', monospace;
+font-family: 'Baskervville', serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'DM Mono', monospace;
+font-family: 'Economica', sans-serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Padyakke Expanded One', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik Spray Paint', cursive;
+font-family: 'Rufina', serif;
+font-family: 'Turret Road', cursive;
+*/
+
+body{
+  background: yellow;
+  align-items: center;
+  align-content: center;
+  display: block;
+  font-family: 'Rufina', serif;
+}
+
+a{
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover{
+    color: #4c6fff;
+    text-decoration: none;
+}
+
+a:visited{
+    color: grey;
+}
+
+.index0{
+  z-index: 96;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 6vw;
+  height: 97vh;
+  background: yellow;
+  border: 1px solid black;
+  writing-mode: vertical-rl;
+  padding: 5px;
+  padding-top: 15px;
+  mix-blend-mode: normal;
+  border-radius: 0 1vw 1vw 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.7vh;
+}
+
+.index1{
+  z-index: 97;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 6vw;
+  height: 67vh;
+  background: white;
+  border: 1px solid black;
+  writing-mode: vertical-rl;
+  padding: 5px;
+  padding-top: 15px;
+  mix-blend-mode: normal;
+  border-radius: 0 1vw 1vw 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.7vh;
+}
+
+.index2{
+  z-index: 98;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 6vw;
+  height: 36vh;
+  background: yellow;
+  border: 1px solid black;
+  writing-mode: vertical-rl;
+  padding: 5px;
+  padding-top: 15px;
+  text-align: left;
+  align-items: left;
+  mix-blend-mode: normal;
+  border-radius: 0 1vw 1vw 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.7vh;
+}
+
+.index3{
+  z-index: 99;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 6vw;
+  height: 7vh;
+  background: yellow;
+  border: 1px solid black;
+  writing-mode: vertical-rl;
+  padding: 5px;
+  padding-top: 15px;
+  mix-blend-mode: normal;
+  border-radius: 0 1vw 0vw 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.7vh;
+}
+
+.content{
+  font-size: 2vh;
+  line-height: 1.4;
+}
+
+    .sticky0{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0vh;
+      font-family: 'Manrope', serif;
+      font-size: 2.5vh;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-left: 2vw;
+      padding-top: 1vh;
+      margin-bottom: 90vh;
+      background: yellow;
+
+    }
+    .sticky1{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 10.5vh;
+      z-index: 1;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 10px black;
+      padding: 20px;
+      width: 40vw;
+      height: 80vh;
+      margin-left: 2vw;
+      overflow: scroll;
+      background: white;
+            transform: skew(0deg);
+    }
+
+    .sticky2{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 11.5vh;
+      z-index: 2;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 10px black;
+      padding: 20px;
+      margin-left: 4vw;
+      width: 40vw;
+      height: 80vh;
+      overflow: scroll;
+            transform: skew(-5deg);
+    }
+
+    .sticky3{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 12.5vh;
+      z-index: 3;
+      background: #FFFFFF;
+      mix-blend-mode: normal;
+      box-shadow: 0px 0px 10px black;
+      padding: 20px;
+      margin-left: 6vw;
+      width: 40vw;
+      height: 80vh;
+      overflow: scroll;
+            transform: skew(-9deg);
+    }
+
+    .sticky4{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 13.5vh;
+      z-index: 4;
+      background: #FFFFFF;
+      mix-blend-mode: normal;
+      box-shadow: 0px 0px 10px black;
+      padding: 20px;
+      margin-left: 8vw;
+      height: 80vh;
+      width: 40vw;
+      overflow: scroll;
+            transform: skew(-13deg);
+    }
+
+    .sticky5{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 14.5vh;
+      z-index: 5;
+      background: #FFFFFF;
+      mix-blend-mode: normal;
+      box-shadow: 0px 0px 10px black;
+      padding: 20px;
+      margin-left: 10vw;
+      width: 40vw;
+      height: 80vh;
+      overflow: scroll;
+      background: yellow;
+            transform: skew(-17deg);
+    }

@@ -1,0 +1,274 @@
+/*@media (max-width: 1000px) {
+  .mode{
+	position: fixed;
+	font-family: monospace;
+	font-size: 16px !important;
+	color: blue;
+	top: 1.5vh;
+	left: 2vw;
+	width: 60px !important;
+	height: 25px !important;
+	padding-top: 5px !important;
+	border-radius: 45px;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 0 0 30px blue;
+	align-items: center;
+	text-align: center;
+	z-index: 99;
+}
+
+.button1{
+	position: fixed;
+	font-family: monospace;
+	font-size: 16px !important;
+	color: blue;
+	top: 1.5vh;
+	right: 2vw;
+	width: 60px !important;
+	height: 25px !important;
+	padding-top: 5px !important;
+	border-radius: 45px;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 0 0 30px blue;
+	align-items: center;
+	text-align: center;
+	z-index: 99;
+}
+
+.button2{
+	position: fixed;
+	font-family: monospace;
+	font-size: 16px !important;
+	color: blue;
+	bottom: 1.5vh;
+	left: 2vw;
+	width: 60px !important;
+	height: 25px !important;
+	padding-top: 5px !important;
+	border-radius: 45px;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 0 0 30px blue;
+	align-items: center;
+	text-align: center;
+	z-index: 99;
+}
+
+.button3{
+	position: fixed;
+	font-family: monospace;
+	font-size: 16px !important;
+	color: blue;
+	bottom: 1.5vh;
+	right: 2vw;
+	width: 60px !important;
+	height: 25px !important;
+	padding-top: 5px !important;
+	border-radius: 45px;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 0 0 30px blue;
+	align-items: center;
+	text-align: center;
+	z-index: 99;
+}
+}
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ff3639;
+}
+
+div{
+}
+
+.cat{
+	width: 100vw;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	align-items: center;
+	align-content: center;
+}
+
+img{
+	position: absolute;
+	width: 50vw;
+	height: auto;
+	top: 40vh;
+	left: 25vw;
+}
+
+.mode{
+	position: fixed;
+	font-family: monospace;
+	font-size: 48px;
+	color: blue;
+	top: 1.5vh;
+	left: 2vw;
+	width: 200px;
+	height: 70px;
+	padding-top: 15px;
+	border-radius: 45px;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 0 0 30px blue;
+	align-items: center;
+	text-align: center;
+	z-index: 99;
+}
+
+.button1{
+	position: fixed;
+	font-family: monospace;
+	font-size: 48px;
+	color: blue;
+	top: 1.5vh;
+	right: 2vw;
+	width: 200px;
+	height: 70px;
+	padding-top: 15px;
+	border-radius: 45px;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 0 0 30px blue;
+	align-items: center;
+	text-align: center;
+	z-index: 99;
+}
+
+.button2{
+	position: fixed;
+	font-family: monospace;
+	font-size: 48px;
+	color: blue;
+	bottom: 1.5vh;
+	left: 2vw;
+	width: 200px;
+	height: 70px;
+	padding-top: 15px;
+	border-radius: 45px;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 0 0 30px blue;
+	align-items: center;
+	text-align: center;
+	z-index: 99;
+}
+
+.button3{
+	position: fixed;
+	font-family: monospace;
+	font-size: 48px;
+	color: blue;
+	bottom: 1.5vh;
+	right: 2vw;
+	width: 200px;
+	height: 70px;
+	padding-top: 15px;
+	border-radius: 45px;
+	background-color: white;
+	border: 1px solid black;
+	box-shadow: 0 0 30px blue;
+	align-items: center;
+	text-align: center;
+	z-index: 99;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  background-image: url('img/noise.png');
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.target {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#red {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #ff3639;
+}
+
+#mint {
+  width: 85vw;
+  height: 92.5vh;
+  background-color: #42bb91;
+  margin: 7.5vw 7.5vh 7.5vh 7.5vw;
+  position: absolute;
+  box-shadow: 0 0 30px blue;
+  	border: 2px solid black;
+}
+
+#purple {
+  width: 70vw;
+  height: 85.5vh;
+  background-color: #9822dc;
+  margin: 15vw 15vh 15vh 15vw;
+  position: absolute;
+  box-shadow: 0 0 30px blue;
+  	border: 2px solid black;
+}
+
+#yellow {
+  width: 55vw;
+  height: 78.5vh;
+  background-color: #fff21e;
+  margin: 22.5vw 22.5vw 22.5vh 22.5vw;
+  position: absolute;
+  box-shadow: 0 0 30px blue;
+  	border: 2px solid black;
+}
+
+#blue {
+  width: 40vw;
+  height: 71.5vh;
+  background-color: #5976ff;
+  margin: 30vw 30vh 30vh 30vw;
+  position: absolute;
+  box-shadow: 0 0 30px blue;
+  	border: 2px solid black;
+}
+
+#orange {
+  width: 25vw;
+  height: 64.5vh;
+  background-color: #ff6800;
+  margin: 37.5vw 37.5vh 37.5vh 37.5vw;
+  position: absolute;
+  box-shadow: 0 0 30px blue;
+  	border: 2px solid black;
+}
+
+#green {
+  width: 10vw;
+  height: 58vh;
+  background-color: #ff00b7;
+  margin: 45vw 45vh 45vh 45vw;
+  position: absolute;
+  box-shadow: 0 0 30px blue;
+  	border: 2px solid black;
+}

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville:ital@0;1&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fredericka+the+Great&family=Manrope:wght@200;300;400;500;600;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Padyakke+Expanded+One&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Spray+Paint&family=Rufina:wght@400;700&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+/*
+font-family: 'Aboreto', cursive;
+font-family: 'Anonymous Pro', monospace;
+font-family: 'Baskervville', serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'DM Mono', monospace;
+font-family: 'Economica', sans-serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Padyakke Expanded One', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik Spray Paint', cursive;
+font-family: 'Rufina', serif;
+font-family: 'Turret Road', cursive;
+*/
+
+body{
+  margin-top: 0vh;
+  margin-left: 0;
+  margin-right: 0;
+  background: #141414;
+}
+
+div{
+  font-family: 'Rufina', serif;
+  color: #141414;
+  font-size: 2em;
+  line-height: 1.3;
+  font-weight: 400;
+  background: #f3f4ed;
+  border: 1px solid grey;
+  mix-blend-mode: hard-light;
+}
+
+a{
+  font-family: 'DM Mono', monospace;
+  font-size: 1.7vh;
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover{
+    color: #4c6fff;
+    text-decoration: none;
+}
+
+a:visited{
+    color: grey;
+}
+
+.index0{
+  z-index: 96;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 6vw;
+  height: 97vh;
+  background: #141414;
+  border: 1px solid black;
+  writing-mode: vertical-rl;
+  padding: 5px;
+  padding-top: 15px;
+  mix-blend-mode: normal;
+  border-radius: 0 1vw 1vw 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.7vh;
+}
+
+.index1{
+  z-index: 97;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 6vw;
+  height: 67vh;
+  background: #141414;
+  border: 1px solid black;
+  writing-mode: vertical-rl;
+  padding: 5px;
+  padding-top: 15px;
+  mix-blend-mode: normal;
+  border-radius: 0 1vw 1vw 0;
+}
+
+.index2{
+  z-index: 98;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 6vw;
+  height: 36vh;
+  background: #f3f4ed;
+  color: black;
+  border: 1px solid black;
+  writing-mode: vertical-rl;
+  padding: 5px;
+  padding-top: 15px;
+  text-align: left;
+  align-items: left;
+  mix-blend-mode: normal;
+  border-radius: 0 1vw 1vw 0;
+}
+
+.index3{
+  z-index: 99;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 6vw;
+  height: 7vh;
+  background: #141414;
+  border: 1px solid black;
+  writing-mode: vertical-rl;
+  padding: 5px;
+  mix-blend-mode: normal;
+  border-radius: 0 1vw 1vw 0;
+}
+
+.sticky1{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 1vh;
+      z-index: 1;
+      width: 50vw;
+      height: 90vh;
+      overflow: scroll;
+      margin-left: 2vw;
+      padding: 30px;
+        box-shadow: 0px 0px 15px black;
+}
+
+.sticky2{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 3vh;
+      z-index: 2;
+      width: 50vw;
+      height: 90vh;
+      overflow: scroll;
+      margin-left: 30vw;
+      padding: 30px;
+        box-shadow: 0px 0px 15px black;
+}
+
+.sticky3{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 10vh;
+      z-index: 3;
+      width: 50vw;
+      height: 90vh;
+      overflow: scroll;
+      margin-left: 10vw;
+      padding: 30px;
+        box-shadow: 0px 0px 15px black;
+}
+
+.sticky4{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 7vh;
+      z-index: 4;
+      width: 50vw;
+      height: 90vh;
+      overflow: scroll;
+      margin-left: 5vw;
+      padding: 30px;
+        box-shadow: 0px 0px 15px black;
+}
+
+.sticky5{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 5vh;
+      z-index: 5;
+      width: 50vw;
+      height: 90vh;
+      overflow: scroll;
+      margin-left: 40vw;
+      padding: 30px;
+        box-shadow: 0px 0px 15px black;
+}
+
+.sticky6{
+      position: -webkit-sticky;
+      position: sticky;
+      top: 2vh;
+      z-index: 6;
+      width: 50vw;
+      height: 90vh;
+      overflow: scroll;
+      margin-left: 15vw;
+      padding: 30px;
+        box-shadow: 0px 0px 15px black;
+}
+
+h1{
+  z-index: 99;
+  transform: rotate(0deg);
+  margin-left: 3vw;
+  margin-right: 40vw;
+  margin-top: 3vh;
+  line-height: 1;
+}
+
+h1 span{
+  background: #black;
+  color: white;
+  font-family: 'DM Mono', monospace;
+  font-weight: 400;
+  font-size: 3vh;
+}
+
+h2{
+  font-size: 2vh;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.lightbar{
+  z-index: 100;
+  background: #ebfff3;
+  box-shadow: 0 0 300px #00ff00;
+  filter: blur(2px);
+  animation: MoveUpDown 10s linear infinite;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  mix-blend-mode: hard-light;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 700vh;
+  }
+}
+
+.scan{
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: color-dodge;
+}

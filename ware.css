@@ -1,0 +1,126 @@
+
+body{
+	align-content: center;
+	text-align: center;
+	margin: 0;
+	background-color: #ff6bff;
+	mix-blend-mode: multiply;
+}
+
+/*
+body:hover{
+	background-image: none;
+	background-color: #ff6bff;
+}
+*/
+
+#video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background-repeat: repeat;
+}
+
+.header{
+}
+
+.img{
+	width: 90vw;
+	position: absolute;
+	top: 2vw;
+	left: 2vw;
+	opacity: 100;
+	mix-blend-mode: darken;
+}
+
+.hover-img{
+	width: 90vw;
+	position: absolute;
+	top: 2vw;
+	left: 2vw;
+	opacity: 0;
+	mix-blend-mode: darken;
+}
+
+.header:hover .img{
+	opacity: 0;
+}
+
+.header:hover .hover-img{
+	opacity: 100;
+}
+
+.bodytext{
+	position: absolute;
+	margin-top: 40vw;
+	margin-left: 2vw;
+	margin-right: 30vw;
+	bottom: 1vh;
+}
+
+#fullscreen-image {
+    display: none;
+    z-index: 999;
+}
+
+input[type="button"]{
+	position: absolute;
+	bottom: 11vh;
+	left: 1.7vw;
+	width: 160px;
+	height: 45px;
+	border: none;
+	border-radius: 35px;
+	background: black;
+	color: #fff;
+	font-family: VCR OSD Mono;
+	font-size: 24px;
+	align-content: center;
+	text-align: left;
+	padding-left: 15px;
+	padding-top: 0px;
+	letter-spacing: normal;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	cursor: pointer;
+}
+
+input[type="button"]:hover{
+	width: 1590px;
+	letter-spacing: 162px;
+}
+
+a{
+	color: blue;
+}
+
+a:visited{
+	color: blue;
+}
+
+img{
+	width: 100vw;
+	height: auto;
+}
+
+h1{
+	font-family: VCR OSD Mono;
+	font-size: 17em;
+	font-weight: 400;
+	letter-spacing: normal;
+	word-spacing: -0.4em;
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+
+h2{
+	font-family: Helvetica;
+	font-size: 1em;
+	font-weight: 500;
+	line-height: 1.2;
+	text-align: left;
+}

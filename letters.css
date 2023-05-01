@@ -1,0 +1,112 @@
+/*@media (max-width: 1000px) {
+	.back{
+	position: fixed;
+	font-family: monospace;
+	font-size: 16px !important;
+	color: black;
+	top: 1.5vh;
+	right: 2vw;
+	width: 60px !important;
+	height: 25px !important;
+	padding-top: 5px !important;
+	border-radius: 45px;
+	background-color: #ffcfff;
+	border: 2px solid black;
+	box-shadow: 0 0 30px #ff61ff;
+	align-items: center;
+	text-align: center;
+	z-index: 99;
+}
+.info{
+	font-size: 0.9em !important;
+	font-family: monospace;
+	text-align: center;
+	margin-top: 3vh;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-size: 16px !important;
+	background: #ffcfff;
+	font-family: monospace;
+}
+}
+*/
+
+body{
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-size: 36px;
+	background: #ffcfff;
+	font-family: monospace;
+}
+
+.info{
+	font-size: 0.8em;
+	font-family: monospace;
+	text-align: center;
+	margin-top: 3vh;
+}
+
+.back{
+	position: fixed;
+	font-family: monospace;
+	font-size: 48px;
+	color: black;
+	top: 1.5vh;
+	right: 2vw;
+	width: 200px;
+	height: 70px;
+	padding-top: 15px;
+	border-radius: 45px;
+	background-color: #ffcfff;
+	border: 2px solid black;
+	box-shadow: 0 0 30px #ff61ff;
+	align-items: center;
+	text-align: center;
+	z-index: 99;
+}
+
+p{
+	border: 2px solid black;
+	box-shadow: 0 0 30px #ff61ff;
+	font-family: Noto Sans CJK KR;
+}
+
+p:nth-child(odd){
+	background: #ffcfff;
+	width: 70vw;
+	height: auto;
+	padding: 1em;
+	margin-left: 12vw;
+	margin-right: 15vw;
+	margin-top: 3vh;
+	margin-bottom: 2vh;
+}
+
+p:nth-child(even){
+	background: #ffcfff;
+	width: 70vw;
+	height: auto;
+	padding: 1em;
+	margin-left: 12vw;
+	margin-right: 15vw;
+	margin-top: 3vh;
+	margin-bottom: 2vh;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  background-image: url('img/noise.png');
+  mix-blend-mode: multiply;
+  opacity: 10%;
+  pointer-events: none;
+  z-index: 100;
+}

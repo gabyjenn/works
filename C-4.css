@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville:ital@0;1&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fredericka+the+Great&family=Manrope:wght@200;300;400;500;600;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Padyakke+Expanded+One&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik+Spray+Paint&family=Rufina:wght@400;700&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+/*
+font-family: 'Aboreto', cursive;
+font-family: 'Anonymous Pro', monospace;
+font-family: 'Baskervville', serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'DM Mono', monospace;
+font-family: 'Economica', sans-serif;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Padyakke Expanded One', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
+font-family: 'Rubik Spray Paint', cursive;
+font-family: 'Rufina', serif;
+font-family: 'Turret Road', cursive;
+*/
+
+body{
+  margin-top: 0vh;
+  margin-left: 0;
+  margin-right: 0;
+  background: #212121;
+}
+
+p{
+  z-index: 0;
+  font-family: 'DM Mono', monospace;
+  color: black;
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 400;
+  padding: 5vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  background: #f3f4ed;
+  border: 1px solid grey;
+  box-shadow: 0px 0px 15px black;
+}
+
+h1{
+  z-index: 0;
+  transform: rotate(5deg);
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 10vh;
+}
+
+h1 span{
+  background: #f3f4ed;
+  color: black;
+  font-family: 'Economica', sans-serif;
+  font-weight: 800;
+  font-size: 1.5em;
+
+}
+
+.lightbar{
+  z-index: 100;
+  background: #ebfff3;
+  box-shadow: 0 0 300px #00ff00;
+  filter: blur(2px);
+  animation: MoveUpDown 35s linear infinite;
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  mix-blend-mode: hard-light;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 1300vh;
+  }
+}
+
+.scan{
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: color-dodge;
+}

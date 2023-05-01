@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ware</title>
+    <link rel="stylesheet" href="wares.css">
+  </head>
+  <body style="margin: 0; padding: 0; background: #ff6bff; font-family: monospace; font-size: 1.5em;">
+        <div style="width: 375px; padding: 1em;">
+          I have some poems for you.
+        </div>
+          <button style="margin-left: 1.5em; background-color: #ff6bff; border: 1px solid black;" onclick="myFunction()" id="select">click me</button>
+  <div class="main">
+    <p style="padding: 1em;" id="result"></p>
+  </div>
+  </body>
+  <script type="text/javascript">
+    function myFunction() {
+  idArray = new Array()
+  idArray [1] = "These are your own words / your way of noticing / and saying plainly of not turning away / from hurt // you have offered them / to me    I am only / giving them back // if only I could show you / how very useless / they are not <Bird-Understander> by Craig Arnold"
+  idArray [2] = "at the back where we squat / outside, eating popcorn // the edge of the receding glacier // where painfully and with wonder / at having survived even/ this far // we are learning to make fire <Habitation> by Margaret Atwood"
+  idArray [3] = "      This is the endless wanderlust: / dervish, / yours is the April-upon-April love / that kept me spinning even beyond your eventful arms / toward the unsurpassed: // the one vast claiming heart, / the glimmering, / the beautiful and revealed Signor. <Beautiful Signor> by Cyrus Cassells"
+  idArray [4] = "      We might be fifty, we might be five, / So snug, so compact, so wise are we! / Under the kitchen-table leg / My knee is pressing against his knee. // Our shutters are shut, the fire is low, / The tap is dripping peacefully; / The saucepan shadows on the wall / Are black and round and plain to see. <Camomile Tea> by Katherine Mansfield"
+  idArray [5] = "      Amidst all this / I keep a falling flower in the mid-air // Not to fall on the earth // Is it not up to you who search for it / To come and sit on it / And make love? // Don’t forget to bring the word / Darling / When you come. <Love Is Not A Word> by Riyas Qurana"
+
+  document.getElementById("select").onclick = myFunction;
+  randomParagraph = Math.floor(Math.random()*5);
+
+  document.getElementById("result").innerHTML = idArray[randomParagraph + 1];       
+}
+  </script>
+</html>

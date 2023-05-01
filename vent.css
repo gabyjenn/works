@@ -1,0 +1,127 @@
+/*@media (max-width: 1000px) {
+	.back{
+  position: fixed;
+  font-family: monospace;
+  font-size: 16px !important;
+  color: black;
+	bottom: 1.5vh;
+	right: 2vw;
+	width: 60px !important;
+	height: 25px !important;
+	padding-top: 5px !important;
+  border-radius: 45px;
+  background-color: yellow;
+  border: 2px solid black;
+  box-shadow: 0 0 30px grey;
+  align-items: center;
+  text-align: center;
+  z-index: 99;
+}
+.button{
+	position: absolute;
+	width: 130px !important;
+	height: 30px !important;
+	padding-top: 5px;
+	margin-top: 5vh;
+	border-radius: 50px;
+	color: white;
+	left: 122.5px !important;
+	font-size: 0.35em !important;
+	background-color: #2b2b2b;
+	box-shadow: 0 0 30px white;
+}
+.submit{
+	position: absolute;
+	width: 100px !important;
+	height: 25px !important;
+	padding-top: 5px !important;
+	border-radius: 5vh;
+	font-size: 0.35em !important;
+	font-family: monospace;
+	box-shadow: 0 0 30px white;
+	background-color: #2b2b2b;
+	color: white;
+	text-decoration: none;
+	left: 137.5px !important;
+}
+}
+*/
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+	font-size: 48px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	align-items: center;
+}
+
+form{
+	margin-top: 3vh;
+}
+
+.userInput{
+	width: 40vw;
+	height: 40vw;
+	border-radius: 35vw;
+	padding: 15vw;
+	box-shadow: 0 0 30px white;
+	font-size: 36px;
+}
+
+.submit{
+	position: absolute;
+	width: 250px;
+	height: 75px;
+	padding-top: 12px;
+	border-radius: 5vh;
+	font-size: 1em;
+	font-family: monospace;
+	box-shadow: 0 0 30px white;
+	background-color: #2b2b2b;
+	color: white;
+	text-decoration: none;
+	left: 350px;
+}
+
+.message{
+	margin-top: 30vh;
+}
+
+.button{
+	position: absolute;
+	width: 350px;
+	height: 75px;
+	padding-top: 12px;
+	margin-top: 5vh;
+	border-radius: 50px;
+	color: white;
+	left: 310px;
+	background-color: #2b2b2b;
+	box-shadow: 0 0 30px white;
+}
+
+a{
+	text-decoration: none;
+}
+
+.back{
+	position: fixed;
+	font-family: monospace;
+	font-size: 48px;
+	color: black;
+	bottom: 1.5vh;
+	right: 2vw;
+	width: 200px;
+	height: 70px;
+	padding-top: 15px;
+	border-radius: 45px;
+	background-color: white;
+	border: 2px solid black;
+	box-shadow: 0 0 30px white;
+	align-items: center;
+	text-align: center;
+	z-index: 99;
+}

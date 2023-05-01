@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta chartset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeewon Kim</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Montagu+Slab&family=Noto+Sans+KR:wght@400;500;700&family=Poppins:wght@200;300;400;500;600&display=swap">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Arbor Day Posters</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+        }
+        .row {
+            padding-top: 7vh;
+        margin-left:0;
+        margin-right:0;
+        }
+        #video-container {
+            position:relative;
+        }
+        button {
+        opacity: 0;
+        background:black;
+        border:black;
+        outline:black;
+        -webkit-transition: 0.2s all ease-in-out;
+        -ms-transition: 0.2s all ease-in-out;
+        transition: 0.2s all ease-in-out;
+        }
+        button:hover {
+        -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari */
+            transform: scale(1.2);
+        }
+        div#video-controls {
+            position: absolute;
+            display:flex;
+            justify-content: space-around;
+            bottom: 0;
+            left: 2%;
+            right: 0;
+            padding: 1.5rem;
+        }
+        video {
+        width:auto;
+      -o-object-fit:cover;
+        object-fit:cover;
+        min-height:100vh;
+        max-height:100vh;
+        padding-left: 30%;
+
+        }
+
+
+
+
+        input[type=range] {
+        
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+        padding: 0;
+        }
+
+        input[type=range]:focus {
+        outline: none;
+        }
+
+
+        input[type=range] {
+        -webkit-appearance: none;
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+        height: 500px;
+        background: none;
+        border: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 50vh;
+        width: 10vw;
+        border-radius: 50%;
+        background-color: transparent;
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+        margin: -6px 0 0 0;
+        transition: all .3s ease-in-out;
+        }
+        input[type=range]::-webkit-slider-thumb:hover {
+        -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari */
+            transform: scale(1.2);
+        }
+
+        input[type=range]:focus::-webkit-slider-runnable-track {
+        background: none;
+        }
+
+
+
+        input[type=range]::-moz-range-track {
+        height: 100px;
+        background: none;
+        border: none;
+        }
+
+        input[type=range]::-moz-range-thumb {
+        border: none;
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        background: black;
+        margin-top: -5px;
+        }
+
+        input[type=range]:-moz-focusring {
+        outline: 1px solid none;
+        outline-offset: -1px;
+        }
+
+        input[type=range]:focus::-moz-range-track {
+        background: none;
+        }
+
+        input[type=range]::-ms-track {
+        height: 100px;
+        background: transparent;
+        border-color: transparent;
+        border-width: 6px 0;
+        /*remove default tick marks*/
+        color: transparent;
+        
+        }
+
+        input[type=range]::-ms-fill-lower {
+        background: black;
+        }
+
+        input[type=range]::-ms-fill-upper {
+        background: black;
+        }
+
+        input[type=range]::-ms-thumb {
+        border: black;
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        background: black;
+        }
+
+        input[type=range]:focus::-ms-fill-lower {
+        background: black;
+        }
+
+        input[type=range]:focus::-ms-fill-upper {
+        background: black;
+        }
+    </style>
+  </head>
+  <body style="background-color: black;">
+    <div class="row" style="background-color: black;">
+        <div class="col-sm-4" id="video-container">
+              <!-- Video -->
+              <video id="video" muted>
+                <source src="vid/fir.mp4" type="video/mp4">
+                <p>
+                  Your browser doesn't support HTML5 video.
+                </p>
+              </video>
+              <!-- Video Controls -->
+              <div id="video-controls">
+                  <button type="button" id="play-pause" class="play"><img src="https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_play_arrow_white_24px.svg"></button>
+                  <input type="range" id="seek-bar" value="0">
+                  <button type="button" id="full-screen"><img src=https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_fullscreen_white_24px.svg></button>
+              </div>
+          </div>
+      </div>
+      <script>
+          window.onload = function() {
+
+// Video
+var video = document.getElementById("video");
+
+// Buttons
+var playButton = document.getElementById("play-pause");
+var fullScreenButton = document.getElementById("full-screen");
+
+// Sliders
+var seekBar = document.getElementById("seek-bar");
+
+// Event listener for the play/pause button
+playButton.addEventListener("click", function() {
+    if (video.paused == true) {
+        // Play the video
+        video.play();
+
+        // Update the button text to 'Pause'
+        $('img', playButton).attr("src","https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_pause_white_24px.svg");
+    } else {
+        // Pause the video
+        video.pause();
+
+        // Update the button text to 'Play'
+        $('img', playButton).attr("src","https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_play_arrow_white_24px.svg");
+    }
+});
+
+
+
+
+// Event listener for the full-screen button
+fullScreenButton.addEventListener("click", function() {
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+    } else if (video.mozRequestFullScreen) {
+        video.mozRequestFullScreen(); // Firefox
+    } else if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen(); // Chrome and Safari
+    }
+});
+
+
+// Event listener for the seek bar
+seekBar.addEventListener("input", function() {
+    // Calculate the new time
+    var time = video.duration * (seekBar.value / 100);
+
+    // Update the video time
+    video.currentTime = time;
+});
+
+
+// Update the seek bar as the video plays
+video.addEventListener("timeupdate", function() {
+    // Calculate the slider value
+    var value = (100 / video.duration) * video.currentTime;
+
+    // Update the slider value
+    seekBar.value = value;
+});
+
+// Pause the video when the seek handle is being dragged
+seekBar.addEventListener("mousedown", function() {
+    video.pause();
+            // Update the button text to 'Play'
+        $('img', playButton).attr("src","https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_play_arrow_white_24px.svg");
+});
+$('#video-controls').width($('video').width());
+$('#seek-bar').width($('video').width() -105);
+}
+      </script>
+    </body>
+    </html>

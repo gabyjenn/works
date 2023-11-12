@@ -1,0 +1,49 @@
+body{
+	background-image: url("img/remnant6.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+    font-family: monospace;
+}
+
+.container{
+	margin-left: 1vw;
+	margin-top: 1vw;
+}
+
+.header{
+
+}
+
+.menu{
+	margin-left: 30vw;
+	margin-top: 10vh;
+	line-height: 1.8;
+}
+
+a{
+	color: black;
+}
+a:hover{
+	color: blue;
+	cursor: pointer;
+}
+a:visited{
+	color: black;
+}
+
+hr{
+	border: 0.5px solid black;
+}
+
+table{
+	margin-left: 31vw;
+	margin-top: 14vh;
+	margin-right: 15vw;
+}
+
+td{
+	padding-right: 5vw;
+	padding-bottom: 2em;
+	line-height: 1.5;
+	vertical-align: top;
+}

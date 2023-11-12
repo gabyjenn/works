@@ -7,12 +7,64 @@ body{
 }
 
 .title{
+	overflow: hidden;
 	margin-left: 3vw;
 	margin-top: 3vw;
 	margin-bottom: 1vw;
 	font-size: 1.5em;
 	font-weight: 400;
 	letter-spacing: -0.02em;
+}
+
+.title a{
+	float: left;
+	margin-top: 3vw;
+	color: black;
+	font-size: 1.5em;
+	font-weight: 400;
+	word-spacing: 0;
+	text-align: center;
+	letter-spacing: -0.02em;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: black;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  font-size: 0.91em;
+  text-decoration: underline;
+  display: block;
+  text-align: left;
+  padding-left: 0.5vw;
+}
+
+.dropdown-content a:hover {
+	word-spacing: 0;
+	text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .projects{
